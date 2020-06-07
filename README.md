@@ -6,4 +6,4 @@ Tuliskan rata-rata UN sekolah pertama dengan sekolah yang kedua lalu klik "Prose
 1. Bikin backend (beserta databasenya) biar nilai sekolah bisa di-GET dan kalau masukin nama sekolah itu gak perlu masukin nilai lagi
 2. Bikin supaya ada animasinya pas loading
 3. Bikin file "Nilai Sekolah.html" bisa dijalanin.
-Makasih buat kontribusinya.
+<br>Makasih buat kontribusinya.
