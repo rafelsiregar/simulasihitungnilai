@@ -51,7 +51,7 @@
             <p class="section">Uraian : </p>
             <p> Jumlah Soal : </p>
             <input type="number" id="jumlahsoal" min="1" step="1" oninput="show()">
-            <p class = "essay"></p>
+            <p id = "essay"></p>
             </div>
         </div>
         <input type="button" class ="tombol" onClick="hitungNilai()" value="Proses">
@@ -65,8 +65,8 @@
             var jml_soal = document.getElementById("jumlahsoal").value;
             var newline = document.createElement("br");
             var newinput = document.createElement("input");
-            for(int i=1;i<=jml_soal;i++){
-                document.getElementsByClassName("essay").appendChild(newline);
+            for(var i=1;i<=jml_soal;i++){
+                document.getElementById("essay").appendChild(newline);
                 var newinput = document.createElement("input");
             }
         }
