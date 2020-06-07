@@ -9,16 +9,6 @@
             }
         }
 
-        function show(){
-            var jml_soal = document.getElementById("jumlahsoal").value;
-            var newline = document.createElement("br");
-            var newinput = document.createElement("input");
-            for(int i=1;i<=jml_soal;i++){
-                document.getElementsByClassName("essay").appendChild(newline);
-                var newinput = document.createElement("input");
-            }
-        }
-        
         function allFilled(x, y){
             var i = 0, j = 0;
             while(i < x.length && j < y.length){
