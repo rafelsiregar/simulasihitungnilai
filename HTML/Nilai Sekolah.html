@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Simulasi Penghitungan Nilai Ujian </title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https//db.onlinewebfonts.com/c/a97dc52b4b2059e5f04907cb7492af0b?family=Handel+Gothic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="My Own Framework.css">
+</head>
+<body>
+    <!--div class=loader>
+        <img src="Bean Eater-1s-177px.svg" alt="Mohon tunggu sebentar"/-->
+    </div>
+    <judul>
+    <h1> Simulasi Penghitungan Nilai Sekolah </h1>
+    <h2> Membantu menghitung nilai ulangan dan pekerjaan sekolah siswa </h2>
+    </judul>
+    <header>
+        <p>
+            <br> <input type="checkbox" id="multiple" name="jenis" value="pilgan" onClick = "checkBox(this.value)" checked>
+            <label for="pilgan">Pilihan Ganda</label>
+            <br><input type="checkbox" id="short" name="jenis" value="isian" onClick="checkBox(this.value)">
+            <label for="isian">Isian</label>
+            <br><input type="checkbox" id="essay" name="jenis" value="uraian" onClick="checkBox(this.value)">
+            <label for="isian">Uraian</label>
+        </p>
+        <div class="row">
+            <div class="column left">
+                <p class="section">Pilihan Ganda : </p>
+            <p>Jumlah betul : </p>
+            <input type="number" id="betulpg" min="1" step="1">
+            <br><p>Jumlah soal : </p>
+            <input type="number" id="soalpg" min="1" step="1">
+            <br><p> Total Skor (apabila betul semua) : </p>
+            <input type="number" id="skorpg" min="1" step="0.5">
+            </div>
+            <div class="column middle">
+                <p class="section">Isian Singkat : </p>
+            <p>Jumlah betul : </p>
+            <input type="number" id="betulisian" min="0" step="1">
+            <br><p>Jumlah soal : </p>
+            <input type="number" id="soalisian" min="0" step="1">
+            <br><p> Total Skor (apabila untuk setiap soal) : </p>
+            <input type="number" id="skorisian" min="0" step="0.1">
+            </div>
+            <div class="column right">
+            <p class="section">Uraian : </p>
+            <p> Jumlah Soal : </p>
+            <input type="number" id="jumlahsoal" min="1" step="1" oninput="show()">
+            <p class = "essay"></p>
+            </div>
+        </div>
+        <input type="button" class ="tombol" onClick="hitungNilai()" value="Proses">
+        <p id="result"></p>
+    </div>
+    </header>
+    </body>
+    <script src="Code.js"></script>
+    </html>

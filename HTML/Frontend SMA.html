@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title> Simulasi Penghitungan Nilai Ujian </title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="https//db.onlinewebfonts.com/c/a97dc52b4b2059e5f04907cb7492af0b?family=Handel+Gothic" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="My Own Framework.css">
+</head>
+<body>
+    <!--div class=loader>
+        <img src="Bean Eater-1s-177px.svg" alt="Mohon tunggu sebentar"/-->
+    </div>
+    <judul>
+    <h1> Simulasi Pembanding Nilai UN </h1>
+    <h2> Membantu membandingkan kualitas sekolah berdasarkan nilai UN </h2>
+    </judul>
+    <header>
+            <h1 style="font-size : 20pt"> Selamat Datang di Simulasi Penghitungan Nilai Ujian </h1>
+            <h2>Anda bisa membandingkan nilai UN sekolah anda di sini. </h2>
+        <p> Pilih Jurusan :
+            <br> <input type="radio" id="science" name="jurusan" value="ipa" onclick="check(this.value)">
+            <label for="science"> IPA</label>
+            <br><input type="radio" id="social" name="jurusan" value="ips" onclick="check(this.value)">
+            <label for="social"> IPS</label>
+        </p>
+        <div class="row">
+            <div class="column left">
+                Nama Sekolah : 
+                <br><input type="text" id="school1">
+            <br><p>Bahasa Indonesia : </p>
+            <input type="number" id="bind1" min="0" max="100" step="0.01">
+            <br><p>Matematika : </p>
+            <input type="number" id="mat1" min="0" max="100" step="0.01">
+            <br><p>Bahasa Inggris : </p>
+            <input type="number" id="bing1" min="0" max="100" step="0.01">
+            <br> <p class="select1">Mata Pelajaran Pilihan 1 : </p>
+            <input type="number" id="pil1-1" min="0" max="100" step="0.01"> 
+            <br><p class="select2">Mata Pelajaran Pilihan 2 : </p>
+            <input type="number" id="pil2-1" min="0" max="100" step="0.01">
+            <br><p class="select3">Mata Pelajaran Pilihan 3 : </p> 
+            <input type="number" id="pil3-1" min="0" max="100" step="0.01">
+            </div>
+            <div class="column right">
+                Nama Sekolah : 
+                <br><input type="text" id="school2">
+            <br><p>Bahasa Indonesia : </p>
+            <input type="number" id="bind2" min="0" max="100" step="0.01">
+            <br><p>Matematika : </p>
+            <input type="number" id="mat2" min="0" max="100" step="0.01">
+            <br><p>Bahasa Inggris : </p>
+            <input type="number" id="bing2" min="0" max="100" step="0.01">
+            <br> <p class="select1">Mata Pelajaran Pilihan 1 : </p> 
+            <input type="number" id="pil1-2" min="0" max="100" step="0.01">
+            <br><p class="select2">Mata Pelajaran Pilihan 2 : </p>  
+            <input type="number" id="pil2-2" min="0" max="100" step="0.01">
+            <br><p class="select3">Mata Pelajaran Pilihan 3 : </p> 
+            <input type="number" id="pil3-2" min="0" max="100" step="0.01">
+            </div>
+        </div>
+        <input type="button" class ="tombol" onClick="hitungNilai()" value="Proses">
+        <p id="result"></p>
+    </div>
+    </header>
+    </body>
+    <script src="Code.js"></script>
+
+    <!--script type="text/javascript">
+        window.addEventListener("load", function(){
+            const loader = document.querySelector(".loader");
+            loader.className += hidden;
+        });
+    </script-->
+    </html>
