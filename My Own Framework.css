@@ -1,0 +1,131 @@
+@import url(//db.onlinewebfonts.com/c/a97dc52b4b2059e5f04907cb7492af0b?family=Handel+Gothic);
+
+@font-face {
+    font-family: "Handel Gothic"; 
+    src: url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.eot"); 
+    src: 
+    url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.eot?#iefix") format("embedded-opentype"), 
+    url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.woff2") format("woff2"), 
+    url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.woff") format("woff"), 
+    url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.ttf") format("truetype"), 
+    url("//db.onlinewebfonts.com/t/a97dc52b4b2059e5f04907cb7492af0b.svg#Handel Gothic") format("svg"); 
+}
+
+.loader {
+    position: fixed;
+    z-index:99;
+    top:0;left:0;width:100%;height:100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+.loader>img {
+    width : 150px;
+}
+
+@keyframes fadeOut {
+    100%{
+        opacity : 0; 
+        visibility: hidden;
+    }
+}
+
+.menu_list{
+    width: 80%;
+    }
+
+.menu_list li{
+    display: inline-block;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.menu_list li a{
+    color:rgba(255, 255, 255, .8);
+    text-decoration: none;
+    }
+
+.menu_list li a:hover{
+    color:orange;
+    }
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+judul {
+    display: inline;
+    text-align: center;
+}
+
+judul h1 {
+    font-size : 20pt;
+}
+
+judul h2 {
+    font-size: 12pt; 
+}
+
+
+header h1 {
+    font-size: 20pt;
+    font-style: normal;
+}
+
+header h2 {
+    font-size: 12pt;
+    font-style: normal;
+}
+
+
+header div {
+    display: inline;
+    vertical-align: top;
+    white-space: normal;
+}
+
+.tombol {
+    margin-top: 5px;
+    display: inline-block;
+    padding: 6pt 30pt;
+    background-color: white;
+    border-radius:25pt;
+    color: black;
+    text-decoration: none;
+}
+
+div .column {
+    float:left;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+}
+
+div .column.left {
+    left : 0;
+}
+
+div .column.right {
+    right : 0;
+}
+
+.section {
+    font-size: 20pt;
+}
+
+input {
+    color: white;
+}
+
+#result {
+    color:white;
+    font-size: 18pt;
+}
