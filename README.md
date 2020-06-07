@@ -7,3 +7,4 @@ Tuliskan rata-rata UN sekolah pertama dengan sekolah yang kedua lalu klik "Prose
 2. Bikin supaya ada animasinya pas loading
 3. Bikin file "Nilai Sekolah.html" bisa dijalanin.
 <br>Makasih buat kontribusinya.
+<br><b>Sebelum dijalanin, JANGAN LUPA di-Minify terlebih dahulu!!!
